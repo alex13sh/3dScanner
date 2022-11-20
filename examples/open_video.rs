@@ -9,7 +9,7 @@ use std::path::PathBuf;
 fn main() {
   video_rs::init();
 
-  let source: Locator = PathBuf::from("/home/user/Видео/screencast-2022-10-27_20.14.26.mp4").into();
+  let source: Locator = PathBuf::from("./data/VID_20221111_144551.mp4").into();
   let mut decoder = Decoder::new(&source)
     .expect("failed to create decoder");
 

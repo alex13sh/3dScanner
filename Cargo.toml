@@ -6,5 +6,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-video-rs = { version = "0.1", features = ["ndarray"] }
+# video-rs = { version = "0.1", features = ["ndarray"] }
+video-rs = { version = "0.1", features = ["ndarray"], git = "https://github.com/alex13sh/oddity-video-ffmpeg5", rev = "6b5f121" }
 ndarray = { version = "0.15" }
+zip = "0.6.3"
+csv = "1.1"
+serde = { version = "1", features = ["derive"] }
